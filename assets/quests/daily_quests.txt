@@ -1,0 +1,4 @@
+# Daily quests (one per line). Format: description|exp|points|type|category
+# Type: flora/fauna, Category: bird, mammal, insect, fish, flower, etc. (optional)
+Catch a fauna today|25|10|fauna|
+Catch a mammal today|30|15|fauna|mammal

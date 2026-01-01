@@ -1,0 +1,10 @@
+# Badges Mission (one per line). Format: name|description|type (flora or fauna)|category (mammals,reptile,fish...)|specific species (if have)|imagename|exp
+
+Splash Scout|Discover 1 fish species|fauna|fish||splashscout|25
+Flower of Malaysia|Discover 1 Malaysian national flower|flora|plant|Hibiscus|flowermalaysia|30
+Bug Boss|Discover 1 insect species|fauna|insect||bugboss|25
+Slither Scout|Discover 5 reptile species|fauna|reptile||slitherscout|100
+Rescue Ranger|Complete 10 conservation actions|both|conservation||rescueranger|200
+Winged Wonders|Discover 1 bird species|fauna|bird||wingedwonders|500
+Wildlife Champion|Discover 50 different species|both|all||wildlifechamp|2000
+Mighty Malayan|Discover 1 Malayan Tiger|fauna|mammal|malayan tiger|malayantiger|30

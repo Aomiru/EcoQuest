@@ -1,0 +1,8 @@
+# Weekly quests (one per line). Format: description|exp|points|type|category
+# Type: flora/fauna, Category: bird, mammal, insect, fish, flower, etc. (optional)
+Catch 10 flora species|50|30|flora|
+Catch 10 fauna species|50|30|fauna|
+Catch 5 birds|60|35|fauna|bird
+Catch 5 mammals|60|35|fauna|mammal
+Catch 5 insects|60|35|fauna|insect
+Catch 5 flowers|60|35|flora|flower

@@ -1,0 +1,143 @@
+name: ecoquest
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+    flutter:
+      sdk: flutter
+    http: ^1.2.2          # for API requests (iNaturalist)
+    provider: ^6.0.5      # for state management
+    camera: ^0.10.5+9     # for camera capture
+    image_picker: ^1.1.2  # pick/take photos
+    path_provider: ^2.1.3 # save images locally
+    path: ^1.8.3          # for file path utilities
+    shared_preferences: ^2.2.3 # save achievements/progress
+    image: ^4.1.7         # for image processing
+    tflite_flutter: ^0.11.0 # TensorFlow Lite for AI model
+    geolocator: ^10.1.0   # for location services
+    geocoding: ^2.1.1     # convert coordinates to addresses
+    google_generative_ai: ^0.4.6 # Gemini AI for fun facts
+    model_viewer_plus: ^1.8.0 # 3D model viewer for AR
+    url_launcher: ^6.2.5  # open maps in external app
+    flutter_map: ^6.1.0   # interactive map widget
+    latlong2: ^0.9.0      # latitude/longitude utilities
+    audioplayers: ^5.2.1  # background music player
+    supabase_flutter: ^2.8.0  # Supabase client for Flutter
+    google_sign_in: ^6.2.2  # Google Sign In
+    connectivity_plus: ^6.0.5  # Network connectivity monitoring
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+    cupertino_icons: ^1.0.8
+    flutter_dotenv: ^5.1.0 # For loading .env files
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/models/
+    - assets/models/labels.txt
+    - assets/models/species_model.tflite
+    - assets/quests/
+    - assets/quests/daily_quests.txt
+    - assets/quests/weekly_quests.txt
+    - assets/badge/badges.txt
+    - assets/ar/
+    - assets/ar/tiger.glb
+    - assets/ar/parrot.glb
+    - assets/ar/bamboo.glb
+    - assets/ar/betta.glb
+    - assets/ar/clownfish.glb
+    - assets/ar/hibiscus.glb
+    - assets/ar/honeybee.glb
+    - assets/badge/
+    - assets/badge/bugboss.bw.png
+    - assets/badge/bugboss.color.png
+    - assets/badge/flowermalaysia.bw.png
+    - assets/badge/flowermalaysia.color.png
+    - assets/badge/malayantiger.bw.png
+    - assets/badge/malayantiger.color.png
+    - assets/badge/rescueranger.bw.png
+    - assets/badge/rescueranger.color.png
+    - assets/badge/slitherscout.bw.png
+    - assets/badge/slitherscout.color.png
+    - assets/badge/splashscout.bw.png
+    - assets/badge/splashscout.color.png
+    - assets/badge/wildlifechamp.bw.png
+    - assets/badge/wildlifechamp.color.png
+    - assets/badge/wingedwonders.bw.png
+    - assets/badge/wingedwonders.color.png
+    - assets/music/bgmusic.mp3
+    
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
